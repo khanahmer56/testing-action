@@ -44,5 +44,5 @@ test("hides 'You are too young!' message when age is not 10", () => {
   const ageInput = screen.getByRole("textbox", { name: /age/i });
   userEvent.type(ageInput, "15");
   const ageMessage = screen.getByTestId("age-message");
-  expect(ageMessage).toHaveStyle({ visibility: "hiddens" });
+  expect(ageMessage).toHaveStyle({ visibility: "hidden" });
 });
